@@ -76,7 +76,6 @@ public class SmokeTest {
         ((JavascriptExecutor) webDriver).executeScript("arguments[0].scrollIntoView(true);", element2);
         webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         element2.click();
-
         webDriver.findElements(By.tagName(TAGNAME_IMG)).get(1).click();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.partialLinkText(PATRICALLINK_TV_CATEGORY)));
